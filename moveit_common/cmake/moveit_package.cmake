@@ -43,7 +43,7 @@ macro(moveit_package)
 
   if(NOT CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
     # Enable warnings
-    add_compile_options(-Wall -Wextra
+    add_compile_options(-Wall -Wextra -Wpedantic
       -Wwrite-strings -Wunreachable-code -Wpointer-arith -Wredundant-decls -Wcast-qual -Wold-style-cast -Wformat=2)
   else()
     # Defaults for Microsoft C++ compiler
